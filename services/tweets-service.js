@@ -1,7 +1,6 @@
 let tweets = require('../data/tweets.json');
 
 module.exports = (app) => {
-    
     const findAllTweets = (req, res) => {
         res.json(tweets);
     }
@@ -12,12 +11,12 @@ module.exports = (app) => {
         const newTweet ={
             _id: (new Date()).getTime() + '',
             "topic": "Web Development",
-            "userName": "Yshtola FFXIV",
+            "userName": "giuseppe",
             "verified": false,
-            "handle": "ysthola_FFXIV",
+            "handle": "giuseppe",
             "time": "2h",
-            "avatar-image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/554802fe-c63a-43b8-b1ce-903ae6324422/dbnmc4m-256b4a52-9bd2-4032-92ce-949bf515e4e8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NDgwMmZlLWM2M2EtNDNiOC1iMWNlLTkwM2FlNjMyNDQyMlwvZGJubWM0bS0yNTZiNGE1Mi05YmQyLTQwMzItOTJjZS05NDliZjUxNWU0ZTgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gfN3L8GduHKxD7BoxI7e8HYDwtcVtf3CLp-P_a7Z-SY",
-            "logo-image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/554802fe-c63a-43b8-b1ce-903ae6324422/dbnmc4m-256b4a52-9bd2-4032-92ce-949bf515e4e8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NDgwMmZlLWM2M2EtNDNiOC1iMWNlLTkwM2FlNjMyNDQyMlwvZGJubWM0bS0yNTZiNGE1Mi05YmQyLTQwMzItOTJjZS05NDliZjUxNWU0ZTgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gfN3L8GduHKxD7BoxI7e8HYDwtcVtf3CLp-P_a7Z-SY",
+            "avatar-image": "https://cdn.vox-cdn.com/thumbor/xVfZLOVd_Cc0cJ8RW1hbdqb1ekg=/0x0:1504x1007/1200x800/filters:focal(632x384:872x624)/cdn.vox-cdn.com/uploads/chorus_image/image/70173648/CBP_e001_0239_0003.0.jpg",
+            "logo-image": "https://cdn.vox-cdn.com/thumbor/xVfZLOVd_Cc0cJ8RW1hbdqb1ekg=/0x0:1504x1007/1200x800/filters:focal(632x384:872x624)/cdn.vox-cdn.com/uploads/chorus_image/image/70173648/CBP_e001_0239_0003.0.jpg",
             "stats": {
                 "comments": 0,
                 "retweets": 0,
@@ -61,8 +60,4 @@ module.exports = (app) => {
         res.sendStatus(200);
     }
     app.put('/api/tweets/:id/like', likeTweet);
-
-
-
-
 };
