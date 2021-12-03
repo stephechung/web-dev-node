@@ -15,8 +15,8 @@ module.exports = (app) => {
             "verified": false,
             "handle": "giuseppe",
             "time": "2h",
-            "avatar-image": "https://cdn.vox-cdn.com/thumbor/xVfZLOVd_Cc0cJ8RW1hbdqb1ekg=/0x0:1504x1007/1200x800/filters:focal(632x384:872x624)/cdn.vox-cdn.com/uploads/chorus_image/image/70173648/CBP_e001_0239_0003.0.jpg",
-            "logo-image": "https://cdn.vox-cdn.com/thumbor/xVfZLOVd_Cc0cJ8RW1hbdqb1ekg=/0x0:1504x1007/1200x800/filters:focal(632x384:872x624)/cdn.vox-cdn.com/uploads/chorus_image/image/70173648/CBP_e001_0239_0003.0.jpg",
+            "avatar-image": "https://www.pngitem.com/pimgs/m/206-2067317_pensive-cowboy-emoji-transparent-hd-png-download.png",
+            "logo-image": "https://www.pngitem.com/pimgs/m/206-2067317_pensive-cowboy-emoji-transparent-hd-png-download.png",
             "stats": {
                 "comments": 0,
                 "retweets": 0,
